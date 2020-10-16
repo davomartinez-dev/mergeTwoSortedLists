@@ -24,6 +24,18 @@ class LinkedList
       @tail = new_node
     end
   end
+
+  def get_nodes
+    @head
+  end
+end
+
+def create_list(arr)
+  list = LinkedList.new
+  arr.each do |ele|
+    list.add(ele)
+  end
+  list
 end
 
 def merge_two_lists(l1, l2)
@@ -55,5 +67,10 @@ def merge_two_lists(l1, l2)
   result
 end
 
-byebug
-puts 'hello world'
+arr_1 = [1, 2, 4]
+arr_2 = [1, 3, 4]
+l1 = create_list(arr_1)
+l2 = create_list(arr_2)
+l1 = l1.get_nodes
+l2 = l2.get_nodes
+print merge_two_lists(l1, l2)
