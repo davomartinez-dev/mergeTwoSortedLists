@@ -1,6 +1,6 @@
 # Merge two sorted lists :rocket:
 
-This is my solution for the coding challenge valid parentheses from leetcode.
+This is my solution for the coding challenge Merge two sorted lists from leetcode.
 
 ## Built With
 
